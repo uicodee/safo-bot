@@ -18,9 +18,7 @@ class UserDAO(BaseDAO[User]):
         await self.session.commit()
         return dto.User.model_validate(user)
 
-    async def get_user_by_telegram_id(
-        self, telegram_id: int
-    ) -> dto.User:
+    async def get_user_by_telegram_id(self, telegram_id: int) -> dto.User:
         result = await self.session.execute(
             select(User).where(User.telegram_id == telegram_id)
         )
