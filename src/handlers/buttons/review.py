@@ -11,6 +11,6 @@ router = Router()
 async def on_review(message: types.Message, state: FSMContext):
     await message.answer(
         text="Izoh qoldiring. Sizning fikringiz biz uchun muhim.",
-        reply_markup=cancel_keyboard()
+        reply_markup=cancel_keyboard(),
     )
     await state.set_state(ReviewForm.review)
