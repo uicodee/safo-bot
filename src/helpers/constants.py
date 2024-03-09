@@ -1,11 +1,3 @@
-main_menu_buttons = [
-    "🛍 Buyurtma berish",
-    "🛒 Buyurtmalarim",
-    "✍️ Izoh qoldirish",
-    "☎️ Kontaktlar",
-    "⚙️ Sozlamalar",
-]
-
 products = [
     {
         "name": "Safo Suv",

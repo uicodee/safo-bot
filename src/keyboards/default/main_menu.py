@@ -1,18 +1,17 @@
 from aiogram import types
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
+from aiogram.utils.i18n import gettext as _
 
-from src.helpers.constants import main_menu_buttons
 
-
-def main_menu_keyboard() -> types.ReplyKeyboardMarkup:
+def main_menu_keyboard(**kwargs) -> types.ReplyKeyboardMarkup:
     builder = ReplyKeyboardBuilder()
-    builder.row(types.KeyboardButton(text=main_menu_buttons[0]))
+    builder.row(types.KeyboardButton(text=_("🛍 Buyurtma berish", locale=kwargs.get('locale'))))
     builder.row(
-        types.KeyboardButton(text=main_menu_buttons[1]),
-        types.KeyboardButton(text=main_menu_buttons[2]),
+        types.KeyboardButton(text=_("🛒 Buyurtmalarim", locale=kwargs.get('locale'))),
+        types.KeyboardButton(text=_("✍️ Izoh qoldirish", locale=kwargs.get('locale'))),
     )
     builder.row(
-        types.KeyboardButton(text=main_menu_buttons[3]),
-        types.KeyboardButton(text=main_menu_buttons[4]),
+        types.KeyboardButton(text=_("☎️ Kontaktlar", locale=kwargs.get('locale'))),
+        types.KeyboardButton(text=_("⚙️ Sozlamalar", locale=kwargs.get('locale'))),
     )
     return builder.as_markup(resize_keyboard=True)

@@ -11,3 +11,4 @@ class User(BaseModel):
     telegram_id: Mapped[int] = mapped_column(BigInteger)
     full_name: Mapped[str] = mapped_column(String)
     username: Mapped[str] = mapped_column(String, nullable=True)
+    locale: Mapped[str] = mapped_column(String)

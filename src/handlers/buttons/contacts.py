@@ -1,10 +1,11 @@
 from aiogram import Router, F, types
 from aiogram.utils.text_decorations import html_decoration
+from aiogram.utils.i18n import lazy_gettext as __
 
 router = Router()
 
 
-@router.message(F.text == "☎️ Kontaktlar")
+@router.message(F.text == __("☎️ Kontaktlar"))
 async def on_contact(message: types.Message):
     message_text = (
         html_decoration.bold("Kontaktlar\n")

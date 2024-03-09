@@ -1,0 +1,44 @@
+# Uzbek translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-03-09 14:34+0500\n"
+"PO-Revision-Date: 2024-03-07 16:01+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: handlers/callbacks/language.py:27 handlers/commands/start.py:23
+msgid "⚡️ Asosiy menu ⚡️"
+msgstr ""
+
+#: helpers/constants.py:4
+msgid "🛍 Buyurtma berish"
+msgstr ""
+
+#: helpers/constants.py:5
+msgid "🛒 Buyurtmalarim"
+msgstr ""
+
+#: helpers/constants.py:6
+msgid "✍️ Izoh qoldirish"
+msgstr ""
+
+#: helpers/constants.py:7
+msgid "☎️ Kontaktlar"
+msgstr ""
+
+#: helpers/constants.py:8
+msgid "⚙️ Sozlamalar"
+msgstr ""
+

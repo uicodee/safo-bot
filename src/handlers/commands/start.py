@@ -3,6 +3,9 @@ from aiogram.filters import CommandStart
 
 from src.infrastructure.database.dao import HolderDao
 from src.keyboards.default import main_menu_keyboard
+from aiogram.utils.i18n import gettext as _
+
+
 
 router = Router()
 
@@ -17,6 +20,6 @@ async def on_cmd_start(message: types.Message, dao: HolderDao):
             username=message.from_user.username
         )
     await message.answer(
-        text="⚡️ Asosiy menu ⚡️",
+        text=_('⚡️ Asosiy menu ⚡️'),
         reply_markup=main_menu_keyboard(),
     )
